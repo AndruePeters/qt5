@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/">
-        <file>views/MainWindow.qml</file>
+    <qresource prefix="/views">
+        <file alias="MainWindow.qml">views/MainWindow.qml</file>
     </qresource>
 </RCC>
