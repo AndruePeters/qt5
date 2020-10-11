@@ -17,4 +17,4 @@ endif()
 target_compile_definitions(cm-ui
   PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(cm-ui
-  PRIVATE Qt6::Core Qt6::Quick)
+  PRIVATE Qt6::Core Qt6::Quick Qt6::Qml cm-lib)
