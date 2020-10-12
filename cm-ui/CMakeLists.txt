@@ -1,3 +1,4 @@
+# Build cm-ui
 
 find_package(QT NAMES Qt6 COMPONENTS Core Quick REQUIRED)
 find_package(Qt6 COMPONENTS Core Quick REQUIRED)
@@ -16,5 +17,5 @@ endif()
 
 target_compile_definitions(cm-ui
   PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
-target_link_libraries(cm-ui
-  PRIVATE Qt6::Core Qt6::Quick Qt6::Qml cm-lib)
+target_link_libraries(cm-ui PRIVATE Qt6::Core Qt6::Quick Qt6::Qml cm-lib
+        project_options project_warnings)
